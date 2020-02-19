@@ -1,0 +1,87 @@
+{
+    "title": "macOS Screensaver",
+    "description": "Manages macOS screensaver settings",
+    "__version": "10",
+    "__feedback": "bill@talkingmoose.net",
+    "type": "object",
+    "options": {
+        "remove_empty_properties": true
+    },
+    "definitions": {
+        "policy_group": {
+            "type": "object",
+            "format": "grid",
+            "options": {
+                "collapsed": true,
+                "disable_properties": true
+            }
+        }
+    },
+    "properties": {
+            "askForPassword": {
+            "title": "Ask for password",
+            "description": "Refers to setting in System Preferences > Desktop & Screen Saver > Start after X.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ],
+            "options": {
+                "infoText": "askForPassword"
+            },
+            "links": [{
+                "rel": "Documentation",
+                "href": "https://optional.example.com/documentation.html"
+            }]
+        },
+        "askForPasswordDelay": {
+            "title": "Ask for password delay",
+            "description": "Refers to setting in System Preferences > Security & Privacy > General tab > Require password X seconds after sleep or screen saver begins.",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer",
+                    "options": {
+                        "enum_titles": ["immediately", "5 seconds", "1 Minute", "5 Minutes", "15 Minutes", "1 Hour", "4 hours", "8 hours"]
+                    },
+                    "enum": [0, 5, 60, 300, 900, 3600, 14400, 28800]
+                }
+            ],
+            "options": {
+                "infoText": "askForPasswordDelay"
+            },
+            "links": [{
+                "rel": "Documentation for Policy",
+                "href": "https://optional.example.com/documentation.html"
+            }]
+        },
+        "idleTime": {
+            "title": "Idle time",
+            "description": "Refers to setting in System Preferences > Desktop & Screen Saver > Screen Saver > Start After X.",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "integer",
+                    "options": {
+                        "enum_titles": ["Never", "1 Minute", "2 Minutes", "5 Minutes", "10 Minutes", "20 Minutes", "30 Minutes", "1 Hour"]
+                    },
+                    "enum": [0, 60, 120, 300, 600, 1200, 1800, 3600]
+                }
+            ],
+            "options": {
+                "infoText": "idleTime"
+            },
+            "links": [{
+                "rel": "Documentation for Policy",
+                "href": "https://optional.example.com/documentation.html"
+            }]
+		}
+	}
+}

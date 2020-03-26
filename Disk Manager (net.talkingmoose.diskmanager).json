@@ -1,0 +1,77 @@
+{
+    "title": "Disk Manager (net.talkingmoose.diskmanager)",
+    "description": "Preference settings for the Disk Manager application",
+    "properties": {
+        "askForPasswordDelay": {
+            "title": "Ask For Password Delay",
+            "description": "Disk Manager will wait the selected amount of time before requiring a password.",
+            "property_order": 5,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["immediately", "5 seconds", "1 Minute", "5 Minutes", "15 Minutes", "1 Hour", "4 hours", "8 hours"]
+                    },
+            "enum": [0,5,60,300,900,3600,14400,28800]
+        },
+        "diskCacheSize": {
+            "title": "Disk Cache Size",
+            "description": "Set disk cache size, in bytes.",
+            "property_order": 10,
+            "type": "integer"
+        },
+        "primaryServer": {
+            "title": "Primary Server",
+            "description": "Disk Manager will default to this server.",
+            "property_order": 15,
+            "type": "string",
+            "options": {
+                "enum_titles": ["Server 1", "Server 2", "Server 3"]
+                },
+            "enum": ["https://server1.talkingmoose.net", "https://server2.talkingmoose.net", "https://server3.talkingmoose.net"]
+        },
+        "downloadDirectory": {
+            "title": "Download Directory",
+            "description": "Choose the default location for downloading working files.",
+            "property_order": 20,
+            "type": "string"
+        },
+        "askForPassword": {
+            "title": "Ask For Password",
+            "description": "Set Disk Manager application to require a password.",
+            "property_order": 25,
+            "type": "boolean"
+        },
+        "domainWhiteList": {
+            "title": "Domain WhiteList",
+            "description": "Disk Manager will not filter these domains.",
+            "property_order": 30,
+            "type": "array",
+                "items": {
+                     "type": "string",
+                     "title": "Entries"
+            }
+        },
+        "serverList": {
+            "title": "Server List",
+            "description": "Add servers to management list.",
+            "property_order": 35,
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "serverAddress": {
+                        "title": "Hostname",
+                        "type": "string"
+                    },
+                    "macAddress": {
+                        "title": "MAC Address",
+                        "type": "string"
+                    },
+                    "ipAddress": {
+                        "title": "IP Address",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

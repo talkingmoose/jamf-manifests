@@ -1,0 +1,16 @@
+{
+    "title": "Google Chrome Extensions (com.google.Chrome)",
+    "description": "Install extensions in Google Chrome",
+    "properties": {
+        "ExtensionInstallForcelist": {
+            "title": "Extension Install Forcelist",
+            "description": "Add extension IDs. Paste the extension ID in front of the default text.",
+            "property_order": 5,
+            "type": "array",
+            "items": {
+                "default": ";https://clients2.google.com/service/update2/crx",
+                "type": "string"
+            }
+        }
+    }
+}

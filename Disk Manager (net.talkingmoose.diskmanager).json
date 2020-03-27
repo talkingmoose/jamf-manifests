@@ -41,13 +41,13 @@
             "type": "boolean"
         },
         "domainWhiteList": {
-            "title": "Domain WhiteList",
+            "title": "Domain Whitelist",
             "description": "Disk Manager will not filter these domains.",
             "property_order": 30,
             "type": "array",
                 "items": {
                      "type": "string",
-                     "title": "Entries"
+                     "title": "Domain"
             }
         },
         "serverList": {

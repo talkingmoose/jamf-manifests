@@ -1,6 +1,7 @@
 {
     "title": "Disk Manager (net.talkingmoose.diskmanager)",
-    "description": "Preference settings for the Disk Manager application",
+    "description": "Preference settings for the fictitious Disk Manager application",
+    "__feedback": "bill@talkingmoose.net",
     "properties": {
         "askForPasswordDelay": {
             "title": "Ask For Password Delay",

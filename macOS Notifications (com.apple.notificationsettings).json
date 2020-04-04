@@ -1,0 +1,59 @@
+{
+    "title": "macOS Notifications (com.apple.notificationsettings)",
+    "description": "This payload specifies the restriction enforced notification settings for apps, using their bundle identifiers. It is supported on iOS 9.3 and later. https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf#page=57 https://developer.apple.com/documentation/devicemanagement/notifications/notificationsettingsitem",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "NotificationSettings": {
+            "title": "Applications",
+            "description": "Specifies the restriction enforced notification settings for apps, using their bundle identifiers. It is supported on iOS 9.3 and later.",
+            "property_order": 10,
+            "type": "array",
+            "items": {
+                "title": "Application",
+                "type": "object",
+                "properties": {
+                    "BundleIdentifier": {
+                        "title": "Bundle Identifier",
+                        "description": "Required. Bundle identifier of app to which to apply these notification settings.",
+                        "type": "string"
+                    },
+                    "NotificationsEnabled": {
+                        "title": "Allow Notifications from App",
+                        "description": "Optional. Whether notifications are allowed for this app. Default is true.",
+                        "type": "boolean"
+                    },
+                    "AlertType": {
+                        "title": "App Alert Style",
+                        "description": "Optional. The type of alert for notifications for this app.",
+                        "type": "integer",
+						"options": {
+							"enum_titles": ["None", "Banners", "Alerts"]
+						},
+						"enum": [0,1,2]
+                    },
+                    "ShowInLockScreen": {
+                        "title": "Show In Lock Screen",
+                        "description": "Optional. Whether notifications can be shown in the lock screen. Default is true.",
+                        "type": "boolean"
+                    },
+                    "ShowInNotificationCenter": {
+                        "title": "Show In Notification Center",
+                        "description": "Optional. Whether notifications can be shown in notification center. Default is true.",
+                        "type": "boolean"
+                    },
+                    "BadgesEnabled": {
+                        "title": "Badges Enabled",
+                        "description": "Optional. Whether badges are allowed for this app. Default is true.",
+                        "type": "boolean"
+                    },
+                    "SoundsEnabled": {
+                        "title": "Sounds Enabled",
+                        "description": "Optional. Whether sounds are allowed for this app. Default is true.",
+                        "type": "boolean"
+                    }
+                },
+			"required": ["BundleIdentifier", "NotificationsEnabled", "AlertType", "ShowInLockScreen", "ShowInNotificationCenter", "BadgesEnabled", "SoundsEnabled"]
+            }
+        }
+    }
+}

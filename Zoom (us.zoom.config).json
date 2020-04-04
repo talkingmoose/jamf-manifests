@@ -1,6 +1,7 @@
 {
 	"title": "Zoom (us.zoom.config)",
-	"description": "Settings for Zoom Client for Mac.",
+	"description": "Settings for Zoom Client for Mac",
+    "__feedback": "bill@talkingmoose.net",
 	"properties": {
         "DisableLinkPreviewInChat": {
             "title": "Disable Link Preview In Chat",

@@ -1,6 +1,6 @@
 {
-    "title": "Google Chrome Extensions (com.google.Chrome)",
-    "description": "Install extensions in Google Chrome",
+    "title": "Microsoft Edge Extensions (com.microsoft.Edge)",
+    "description": "Install extensions in Microsoft Edge",
     "__feedback": "bill@talkingmoose.net",
     "properties": {
         "ExtensionInstallForcelist": {

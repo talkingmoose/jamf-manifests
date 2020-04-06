@@ -1,6 +1,6 @@
 {
     "title": "Disk Manager (net.talkingmoose.diskmanager)",
-    "description": "Preference settings for the fictitious Disk Manager application",
+    "description": "Preference settings for the fictitious Disk Manager application. This manifest demonstrates different ways to format the appearance or value of properties as well as include useful options like infoText. Jamf Pro supports many but not all elements and options here: https://github.com/json-editor/json-editor.",
     "__feedback": "bill@talkingmoose.net",
     "properties": {
         "askForPasswordDelay": {
@@ -10,7 +10,7 @@
             "type": "integer",
             "options": {
                 "enum_titles": ["immediately", "5 seconds", "1 Minute", "5 Minutes", "15 Minutes", "1 Hour", "4 hours", "8 hours"]
-                    },
+            },
             "enum": [0,5,60,300,900,3600,14400,28800]
         },
         "diskCacheSize": {
@@ -41,14 +41,33 @@
             "property_order": 25,
             "type": "boolean"
         },
-        "domainWhiteList": {
+        "disableOutput": {
+            "title": "Save Paper",
+            "description": "Set paper-saving mode.",
+            "property_order": 27,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key name: disableOutput"
+            }
+        },
+        "powerSaver": {
+            "title": "Power Saver",
+            "description": "Enable energy saving features.",
+            "property_order": 29,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": [1,0]
+        },
+        "domainWhitelist": {
             "title": "Domain Whitelist",
             "description": "Disk Manager will not filter these domains.",
             "property_order": 30,
             "type": "array",
-                "items": {
-                     "type": "string",
-                     "title": "Domain"
+            "items": {
+                "type": "string",
+                "title": "Domain"
             }
         },
         "serverList": {
@@ -74,5 +93,6 @@
                 }
             }
         }
-    }
+    },
+    "required": ["powerSaver"]
 }

@@ -1,0 +1,18 @@
+{
+    "title": "Slack (com.tinyspec.slackmacgap)",
+    "description": "Manage Slack settings. https://slack.com/help/articles/360035635174-Deploy-Slack-for-macOS",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "SlackNoAutoUpdates": {
+            "title": "Automatic Updates",
+            "description": "Turn automatic updates on or off. Requires version 4.0 or later.",
+            "property_order": 5,
+            "type": "string",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": ["1","0"]
+        }
+    },
+    "required": ["SlackNoAutoUpdates"]
+}

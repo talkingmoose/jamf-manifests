@@ -1,0 +1,19 @@
+{
+	"title": "BBEdit Expert Preferences - File Comparison (com.barebones.bbedit)",
+	"description": "There are a number of behaviors in BBEdit for which there are no UI controls in the Preferences window; this is typically because the settings are so obscure that placing them in the Preferences window would just make it complicated. In fact, some of these settings were in the Preferences window, and have been removed in order to simplify the interface; in such cases, any changes you made previously will be honored, even though the UI in the Preferences window is gone. https://www.barebones.com/support/bbedit/ExpertPreferences.html",
+    "__feedback": "bill@talkingmoose.net",
+	"properties": {
+        "Diff_IgnoreRCSKeywords": {
+            "title": "Diff Ignore RCS Keywords",
+            "description": "When comparing text files, BBEdit will canonicalize RCS keywords to their unexpanded state, so that the values of RCS keywords are not significant to the differences calculations. If you wish, you can disable this, so that any chance in the RCS keywords on a line will cause the line to appear in the differences.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

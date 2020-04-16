@@ -1,0 +1,79 @@
+{
+	"title": "BBEdit Expert Preferences - HTML Tools (com.barebones.bbedit)",
+	"description": "There are a number of behaviors in BBEdit for which there are no UI controls in the Preferences window; this is typically because the settings are so obscure that placing them in the Preferences window would just make it complicated. In fact, some of these settings were in the Preferences window, and have been removed in order to simplify the interface; in such cases, any changes you made previously will be honored, even though the UI in the Preferences window is gone. https://www.barebones.com/support/bbedit/ExpertPreferences.html",
+    "__feedback": "bill@talkingmoose.net",
+	"properties": {
+        "HTMLImageMarkupCreatesSizeAttributes": {
+            "title": "HTML Image Markup Creates Size Attributes",
+            "description": "When you drop an image file into an HTML document to generate an image tag, BBEdit will generate ‘width’ and ‘height’ tags based on information in the file itself.",
+            "property_order": 10,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HTMLImageMarkupUsesFileNameForAlt": {
+            "title": "HTML Image Markup Uses File Name For Alt",
+            "description": "When generating image markup as a result of dropping an image file into an HTML document, BBEdit will generate an ‘alt’ attribute for the image tag, whose value is the file's name. If you would prefer for the ‘alt’ attribute to be omitted (which will result in an error when checking syntax), you can disable this.",
+            "property_order": 20,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "HTMLImageMarkupUseInlineStyleForImageSize": {
+            "title": "HTML Image Markup Use Inline Style For Image Size",
+            "description": "If HTMLImageMarkupCreatesSizeAttributes is turned on, you can instruct BBEdit to generate inline styles for image sizes, instead of height and width.",
+            "property_order": 25,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MarkupPanelAutoPrefillRecommendedAttributeNames": {
+            "title": "Markup Panel Auto Prefill Recommended Attribute Names",
+            "description": "When you invoke the Markup Panel to create a new tag, it will automatically fill in attribute names for ‘promoted’ attributes. If there are any attributes that you don't want to be present in the generated markup, just leave their values blank, and the panel will omit them (unless the attributes are required). Use this to suppress the auto fill.",
+            "property_order": 15,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "MarkupToolsMisc_SkipXMLFilesWhenScanningFolders": {
+            "title": "Markup Tools Misc - Skip XML Files When Scanning Folders",
+            "description": "When doing Check Syntax, Check Links, Update, or Update Images on a folder (including a web site), BBEdit will skip XML files (that is, files determined to be XML either by mapping their file name extensions, or by inspection of their contents). Set this to include such files.",
+            "property_order": 30,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        },
+        "UseXMLMarkupRulesForHTML5": {
+            "title": "Use XML Markup Rules For HTML 5",
+            "description": "Ordinarily, BBEdit will generate XHTML-style markup in HTML5 documents (those with a ’<‘DOCTYPE HTML>’ declaration). If you wish, you can suppress this.",
+            "property_order": 5,
+            "anyOf": [
+                {"type": "null", "title": "Not Configured"},
+                {
+                    "title": "Configured",
+                    "type": "boolean"
+                }
+            ]
+        }
+	}
+}

@@ -1,0 +1,37 @@
+{
+    "title": "Apple Mail (com.apple.mail-shared)",
+    "description": "Preference settings for Apple Mail.",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "AlertForNonmatchingDomains": {
+            "title": "Alert For Non-matching Domains",
+            "default": true,
+            "description": "Enable alerts when addressing messages to recipients outside the user's own email domain.",
+            "property_order": 10,
+            "type": "boolean"
+        },
+       "DomainForMatching": {
+            "title": "Domains For Matching",
+            "description": "Do not alert for these domains.",
+            "property_order": 20,
+            "type": "array",
+            "items": {
+                "type": "string",
+                "title": "Domain"
+            }
+        },
+        "DisableURLLoading": {
+            "title": "Disable URL Loading",
+            "description": "Disable automatic loading of remote content.",
+            "property_order": 30,
+            "type": "boolean"
+        },
+        "ExpandPrivateAliases": {
+            "title": "When sending to a group, show all member addresses.",
+            "description": "Expand Private Aliases.",
+            "property_order": 40,
+            "type": "boolean"
+        }
+    },
+    "required": ["AlertForNonmatchingDomains"]
+}

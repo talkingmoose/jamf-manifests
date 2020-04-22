@@ -1,0 +1,67 @@
+{
+    "title": "macOS Automatic Text Corrections (.GlobalPreferences)",
+    "description": "Preference settings for system-wide automatic text replacements: Correct spelling automatically, Capitalize words automatically, Add period with double-space, Touch Bar typing suggestions and Use smart quotes and dashes. Corresponds to System Preferences > Keyboard > Text tab.",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "NSAutomaticCapitalizationEnabled": {
+            "title": "Automatic Capitalization",
+            "description": "Capitalize words automatically.",
+            "property_order": 5,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": [1,0]
+        },
+        "NSAutomaticDashSubstitutionEnabled": {
+            "title": "Automatic Dash Substitution",
+            "description": "Use smart dashes. Replace double-dashes with emdash.",
+            "property_order": 10,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": [1,0]
+        },
+        "NSAutomaticPeriodSubstitutionEnabled": {
+            "title": "Automatic Period Substitution",
+            "description": "Convert double-space to period.",
+            "property_order": 15,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": [1,0]
+        },
+        "NSAutomaticQuoteSubstitutionEnabled": {
+            "title": "Automatic Quote Substitution",
+            "description": "Use smart quotes. Replace straight quotes with curly quotes.",
+            "property_order": 20,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": [1,0]
+        },
+        "NSAutomaticSpellingCorrectionEnabled": {
+            "title": "Automatic Spelling Correction",
+            "description": "Correct spelling automatically.",
+            "property_order": 25,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": [1,0]
+        },
+        "NSAutomaticTextCompletionEnabled": {
+            "title": "Automatic Text Completion",
+            "description": "Suggest corrections and replace text automatically.",
+            "property_order": 30,
+            "type": "integer",
+            "options": {
+                "enum_titles": ["On", "Off"]
+            },
+            "enum": [1,0]
+        }
+    }
+}

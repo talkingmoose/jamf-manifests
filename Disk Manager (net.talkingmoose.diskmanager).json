@@ -9,13 +9,32 @@
             "property_order": 5,
             "type": "integer",
             "options": {
-                "enum_titles": ["immediately", "5 seconds", "1 Minute", "5 Minutes", "15 Minutes", "1 Hour", "4 hours", "8 hours"]
+                "enum_titles": [
+                	"immediately",
+                	"5 seconds",
+                	"1 Minute",
+                	"5 Minutes",
+                	"15 Minutes",
+                	"1 Hour",
+                	"4 hours",
+                	"8 hours"
+				]
             },
-            "enum": [0,5,60,300,900,3600,14400,28800]
+            "enum": [
+            	0,
+				5,
+				60,
+				300,
+				900,
+				3600,
+				14400,
+				28800
+			]
         },
         "diskCacheSize": {
             "title": "Disk Cache Size",
             "description": "Set disk cache size, in bytes.",
+            "default": 25600,
             "property_order": 10,
             "type": "integer"
         },
@@ -25,9 +44,17 @@
             "property_order": 15,
             "type": "string",
             "options": {
-                "enum_titles": ["Server 1", "Server 2", "Server 3"]
-                },
-            "enum": ["https://server1.talkingmoose.net", "https://server2.talkingmoose.net", "https://server3.talkingmoose.net"]
+                "enum_titles": [
+                	"Server 1",
+                	"Server 2",
+                	"Server 3"
+				]
+			},
+            "enum": [
+            	"https://server1.talkingmoose.net",
+            	"https://server2.talkingmoose.net",
+            	"https://server3.talkingmoose.net"
+			]
         },
         "downloadDirectory": {
             "title": "Download Directory",
@@ -56,9 +83,15 @@
             "property_order": 29,
             "type": "integer",
             "options": {
-                "enum_titles": ["On", "Off"]
+                "enum_titles": [
+                	"On",
+                	"Off"
+				]
             },
-            "enum": [1,0]
+            "enum": [
+            	1,
+            	0
+			]
         },
         "domainWhitelist": {
             "title": "Domain Whitelist",
@@ -76,6 +109,7 @@
             "property_order": 35,
             "type": "array",
             "items": {
+                "title": "Server",
                 "type": "object",
                 "properties": {
                     "serverAddress": {

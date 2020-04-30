@@ -1,0 +1,22 @@
+{
+    "title": "macOS Limit Ad Tracking (com.apple.AdLib)",
+    "description": "Manageable macOS ad tracking as viewed in System Preferences > Security & Privacy > Privacy tab > Advertising.",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "forceLimitAdTracking": {
+            "title": "Limit Ad Tracking",
+            "description": "Opt out of receiving ads targeted to your interests in Apple Apps and your iOS devices. You may still receive the same number of ads, but the ads may be less relevant to you.",
+            "property_order": 5,
+            "type": "boolean",
+            "options": {
+                "enum_titles": [
+                    "Limit Ad Tracking"
+                ]
+            },
+            "enum": [
+                true
+            ]
+        }
+    },
+    "required": ["forceLimitAdTracking"]
+}

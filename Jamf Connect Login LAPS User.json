@@ -1,0 +1,13 @@
+{
+    "title": "Jamf Connect Login LAPS User (com.jamf.connect.login)",
+    "description": "As of Jamf Pro 10.23 and earlier (and maybe later), the Jamf Connect Login LAPS User setting is incorrectly configured as a boolean instead of a string. Add this manifest as a second item in your Jamf Connect Login configuration profile to add a correctly configured setting that will work.",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+       "LAPSUser": {
+            "title": "LAPS User (as string)",
+            "description": "An existing local administrator account, of which Jamf Connect can change the password to the personal recovery key. This setting is only used by Jamf Connect to help enable FileVault on standard accounts on macOS 10.15 or later.",
+            "property_order": 20,
+            "type": "string"
+        }
+    }
+}

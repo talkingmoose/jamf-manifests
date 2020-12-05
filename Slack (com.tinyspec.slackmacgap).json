@@ -11,7 +11,7 @@
             "options": {
                 "enum_titles": ["On", "Off"]
             },
-            "enum": ["1","0"]
+            "enum": ["0","1"]
         }
     },
     "required": ["SlackNoAutoUpdates"]

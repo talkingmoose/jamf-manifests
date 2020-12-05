@@ -1,0 +1,24 @@
+{
+    "title": "Safari (com.apple.Safari)",
+    "description": "Preference settings for Apple Safari.",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "AutoOpenSafeDownloads": {
+            "title": "Auto open safe downloads",
+            "description": "Force enable or disable automatically opening non-executable files like DMGs or PDFs.",
+            "type": "boolean",
+            "default": false,
+            "options": {
+                "enum_titles": [
+                    "Enable",
+                    "Disable"
+                ]
+            },
+            "enum": [
+                true,
+                false
+            ]
+        }
+    },
+    "required": ["AutoOpenSafeDownloads"]
+}

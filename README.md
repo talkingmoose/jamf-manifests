@@ -7,3 +7,5 @@ Some of these manifests were created using [Managed App Schema Builder](https://
 The manifest for [Disk Manager](https://github.com/Jamf-Custom-Profile-Schemas/jamf-manifests/blob/master/Disk%20Manager%20(net.talkingmoose.diskmanager).json) is for a fictitious app. It provides examples for a variety of options possible when creating properties in manifests. Paste it into the Custom Schema field of a new Jamf Pro Configuration Profile under Application & Custom Settings and click the Properties tab to view the forms created for each property. Use this as a template for creating your own manifests.
 
 For information about how to use a Jamf manifest, see the [wiki](../../wiki).
+
+For details about creating JSON manifests, refer to [Jamf's documenation](https://docs.jamf.com/technical-papers/jamf-pro/json-schema/10.19.0/Introduction.html).

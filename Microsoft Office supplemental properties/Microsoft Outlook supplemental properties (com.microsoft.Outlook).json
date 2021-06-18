@@ -1,0 +1,252 @@
+{
+    "title": "com.microsoft.Outlook (supplemental)",
+    "description": "Preference Domain: com.microsoft.Outlook, Application: Microsoft Outlook. Supplemental properties.",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "AllowedEmailDomains": {
+            "title": "Allow only corporate mailboxes to be added",
+            "description": "Specify one or more domains users are allowed to add in Outlook. Format strings as regular expressions. Doesn't remove or disconnect accounts already added in Outlook.",
+            "property_order": 30,
+            "type": "array",
+            "items": {
+                "type": "string",
+                "title": "Domain"
+            },
+            "options": {
+                "infoText": "Key: AllowedEmailDomains"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#allow-only-corporate-mailboxes-to-be-added"
+                }
+            ]
+        },
+        "AllowCertsWithoutMatchingEmailAddress": {
+            "title": "Allow S/MIME certificates without a matching email address",
+            "default": true,
+            "description": "Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate does not match the email address. Only applies to the new Outlook.",
+            "property_order": 25,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key: AllowCertsWithoutMatchingEmailAddress"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#allow-smime-certificates-without-a-matching-email-address"
+                }
+            ]
+        },
+        "OfficeAutoSignIn": {
+            "title": "Automatically configure Office 365 mailbox on first launch",
+            "default": true,
+            "description": "The email address used for Office activation will be added on first launch. This key also suppresses first run dialogs for other Office apps, including Word, Excel, PowerPoint, and OneNote.",
+            "property_order": 25,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key: OfficeAutoSignIn"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#automatically-configure-office-365-mailbox-on-first-launch"
+                }
+            ]
+        },
+        "Weather_update_automatically": {
+            "title": "Disable automatic updating of weather location",
+            "default": true,
+            "description": "Prevent users from choosing Update Location Automatically for weather location.",
+            "property_order": 25,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key: Weather_update_automatically"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#disable-automatic-updating-of-weather-location"
+                }
+            ]
+        },
+        "DisableDoNotForward": {
+            "title": "Disable \"Do Not Forward\"",
+            "default": true,
+            "description": "Prevent users from applying the Do Not Forward option to emails when using Microsoft 365 Message Encryption. Only applies to the new Outlook.",
+            "property_order": 25,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key: DisableDoNotForward"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#disable-do-not-forward"
+                }
+            ]
+        },
+        "DisableEncryptOnly": {
+            "title": "Disable \"Encrypt-Only\"",
+            "default": true,
+            "description": "Prevent users from applying the Encrypt-Only option to emails when using Microsoft 365 Message Encryption. Only applies to the new Outlook.",
+            "property_order": 25,
+            "type": "boolean",
+            "options": {
+                "infoText": "Key: DisableEncryptOnly"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#disable-encrypt-only"
+                }
+            ]
+        },
+        "EnableNewOutlook": {
+            "title": "Enable new Outlook",
+            "default": 1,
+            "description": "Set the availability and default position of the New Outlook switch.",
+            "property_order": 5,
+            "type": "integer",
+            "options": {
+                "enum_titles": [
+                    "Switch hidden (default)",
+                    "Switch displayed, default off",
+                    "Switch displayed, default on",
+                    "New Outlook enabled with switch hidden"
+                ],
+                "infoText": "Key: EnableNewOutlook"
+            },
+            "enum": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#enable-new-outlook"
+                }
+            ]
+        },
+        "SMIMECertificatesLookupOrder": {
+            "title": "Set the order in which S/MIME certificates are considered",
+            "default": 1,
+            "description": "Set the order in which certificates will be used to decrypt and encrypt S/MIME messages. Only applies to the new Outlook.",
+            "property_order": 5,
+            "type": "integer",
+            "options": {
+                "enum_titles": [
+                    "Contacts",
+                    "GAL",
+                    "Device",
+                    "LDAP"
+                ],
+                "infoText": "Key: SMIMECertificatesLookupOrder"
+            },
+            "enum": [
+                0,
+                1,
+                2,
+                3
+            ],
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#set-the-order-in-which-smime-certificates-are-considered"
+                }
+            ]
+        },
+        "CalendarFirstDayOfWeek": {
+            "title": "Specify calendar first day of week",
+            "default": 2,
+            "description": "Set the first day of week in calendar view.",
+            "property_order": 5,
+            "type": "integer",
+            "options": {
+                "enum_titles": [
+                    "Sunday (default)",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ],
+                "infoText": "Key: CalendarFirstDayOfWeek"
+            },
+            "enum": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#specify-calendar-first-day-of-week"
+                }
+            ]
+        },
+        "DefaultWeatherLocation": {
+            "title": "Specify default weather location",
+            "description": "Set default location for weather in calendar view. Use the format returned by the weather location search within Outlook.",
+            "property_order": 20,
+            "type": "string",
+            "options": {
+                "infoText": "Key: DefaultWeatherLocation"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#specify-default-weather-location"
+                }
+            ]
+        },
+        "DefaultEmailAddressOrDomain": {
+            "title": "Specify Office 365 mailbox to be added on first launch",
+            "description": "Set the domain or full email address of Office 365 mailbox to be added on first launch. The full email address or domain specified will be added in Outlook instead of the Office activation email address.",
+            "property_order": 20,
+            "type": "string",
+            "options": {
+                "infoText": "Key: DefaultEmailAddressOrDomain"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#specify-office-365-mailbox-to-be-added-on-first-launch"
+                }
+            ]
+        },
+        "AutomaticallyDownloadExternalContent": {
+            "title": "Specify when pictures are downloaded for email",
+            "default": 1,
+            "description": "Set when pictures are automatically downloaded from the internet for email. Found under Outlook > Preferences > Email > Reading > Security.",
+            "property_order": 5,
+            "type": "integer",
+            "options": {
+                "enum_titles": [
+                    "Never (default)",
+                    "In messages from my contacts",
+                    "In all messages"
+                ],
+                "infoText": "Key: AutomaticallyDownloadExternalContent"
+            },
+            "enum": [
+                0,
+                1,
+                2
+            ],
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#specify-when-pictures-are-downloaded-for-email"
+                }
+            ]
+        }
+    }
+}

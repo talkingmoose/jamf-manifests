@@ -6,7 +6,7 @@
         "AllowedEmailDomains": {
             "title": "Allow only corporate mailboxes to be added",
             "description": "Specify one or more domains users are allowed to add in Outlook. Format strings as regular expressions. Doesn't remove or disconnect accounts already added in Outlook.",
-            "property_order": 30,
+            "property_order": 5,
             "type": "array",
             "items": {
                 "type": "string",
@@ -26,7 +26,7 @@
             "title": "Allow S/MIME certificates without a matching email address",
             "default": true,
             "description": "Allow users to decrypt and encrypt S/MIME messages when the S/MIME certificate does not match the email address. Only applies to the new Outlook.",
-            "property_order": 25,
+            "property_order": 10,
             "type": "boolean",
             "options": {
                 "infoText": "Key: AllowCertsWithoutMatchingEmailAddress"
@@ -42,7 +42,7 @@
             "title": "Automatically configure Office 365 mailbox on first launch",
             "default": true,
             "description": "The email address used for Office activation will be added on first launch. This key also suppresses first run dialogs for other Office apps, including Word, Excel, PowerPoint, and OneNote.",
-            "property_order": 25,
+            "property_order": 15,
             "type": "boolean",
             "options": {
                 "infoText": "Key: OfficeAutoSignIn"
@@ -58,7 +58,7 @@
             "title": "Disable automatic updating of weather location",
             "default": true,
             "description": "Prevent users from choosing Update Location Automatically for weather location.",
-            "property_order": 25,
+            "property_order": 20,
             "type": "boolean",
             "options": {
                 "infoText": "Key: Weather_update_automatically"
@@ -90,7 +90,7 @@
             "title": "Disable \"Encrypt-Only\"",
             "default": true,
             "description": "Prevent users from applying the Encrypt-Only option to emails when using Microsoft 365 Message Encryption. Only applies to the new Outlook.",
-            "property_order": 25,
+            "property_order": 30,
             "type": "boolean",
             "options": {
                 "infoText": "Key: DisableEncryptOnly"
@@ -106,7 +106,7 @@
             "title": "Enable new Outlook",
             "default": 1,
             "description": "Set the availability and default position of the New Outlook switch.",
-            "property_order": 5,
+            "property_order": 35,
             "type": "integer",
             "options": {
                 "enum_titles": [
@@ -134,7 +134,7 @@
             "title": "Set the order in which S/MIME certificates are considered",
             "default": 1,
             "description": "Set the order in which certificates will be used to decrypt and encrypt S/MIME messages. Only applies to the new Outlook.",
-            "property_order": 5,
+            "property_order": 40,
             "type": "integer",
             "options": {
                 "enum_titles": [
@@ -162,7 +162,7 @@
             "title": "Specify calendar first day of week",
             "default": 2,
             "description": "Set the first day of week in calendar view.",
-            "property_order": 5,
+            "property_order": 45,
             "type": "integer",
             "options": {
                 "enum_titles": [
@@ -195,7 +195,7 @@
         "DefaultWeatherLocation": {
             "title": "Specify default weather location",
             "description": "Set default location for weather in calendar view. Use the format returned by the weather location search within Outlook.",
-            "property_order": 20,
+            "property_order": 50,
             "type": "string",
             "options": {
                 "infoText": "Key: DefaultWeatherLocation"
@@ -210,7 +210,7 @@
         "DefaultEmailAddressOrDomain": {
             "title": "Specify Office 365 mailbox to be added on first launch",
             "description": "Set the domain or full email address of Office 365 mailbox to be added on first launch. The full email address or domain specified will be added in Outlook instead of the Office activation email address.",
-            "property_order": 20,
+            "property_order": 55,
             "type": "string",
             "options": {
                 "infoText": "Key: DefaultEmailAddressOrDomain"
@@ -226,7 +226,7 @@
             "title": "Specify when pictures are downloaded for email",
             "default": 1,
             "description": "Set when pictures are automatically downloaded from the internet for email. Found under Outlook > Preferences > Email > Reading > Security.",
-            "property_order": 5,
+            "property_order": 60,
             "type": "integer",
             "options": {
                 "enum_titles": [

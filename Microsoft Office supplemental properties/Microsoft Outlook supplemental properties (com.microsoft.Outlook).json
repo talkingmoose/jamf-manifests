@@ -38,22 +38,6 @@
                 }
             ]
         },
-        "OfficeAutoSignIn": {
-            "title": "Automatically configure Office 365 mailbox on first launch",
-            "default": true,
-            "description": "The email address used for Office activation will be added on first launch. This key also suppresses first run dialogs for other Office apps, including Word, Excel, PowerPoint, and OneNote.",
-            "property_order": 15,
-            "type": "boolean",
-            "options": {
-                "infoText": "Key: OfficeAutoSignIn"
-            },
-            "links": [
-                {
-                    "rel": "More information",
-                    "href": "https://docs.microsoft.com/en-us/DeployOffice/mac/preferences-outlook#automatically-configure-office-365-mailbox-on-first-launch"
-                }
-            ]
-        },
         "Weather_update_automatically": {
             "title": "Disable automatic updating of weather location",
             "default": true,

@@ -10,33 +10,49 @@
             "type": "integer",
             "options": {
                 "enum_titles": [
-                	"immediately",
-                	"5 seconds",
-                	"1 Minute",
-                	"5 Minutes",
-                	"15 Minutes",
-                	"1 Hour",
-                	"4 hours",
-                	"8 hours"
-				]
+                    "immediately",
+                    "5 seconds",
+                    "1 Minute",
+                    "5 Minutes",
+                    "15 Minutes",
+                    "1 Hour",
+                    "4 hours",
+                    "8 hours"
+                ],
+                "infoText": "Keyword: askForPasswordDelay"
             },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ],
             "enum": [
-            	0,
-				5,
-				60,
-				300,
-				900,
-				3600,
-				14400,
-				28800
-			]
+                0,
+                5,
+                60,
+                300,
+                900,
+                3600,
+                14400,
+                28800
+            ]
         },
         "diskCacheSize": {
             "title": "Disk Cache Size",
             "description": "Set disk cache size, in bytes.",
             "default": 25600,
             "property_order": 10,
-            "type": "integer"
+            "type": "integer",
+            "options": {
+                "infoText": "Keyword: diskCacheSize"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
         },
         "primaryServer": {
             "title": "Primary Server",
@@ -45,68 +61,115 @@
             "type": "string",
             "options": {
                 "enum_titles": [
-                	"Server 1",
-                	"Server 2",
-                	"Server 3"
-				]
-			},
+                    "Server 1",
+                    "Server 2",
+                    "Server 3"
+                ],
+                "infoText": "Keyword: primaryServer"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ],
             "enum": [
-            	"https://server1.talkingmoose.net",
-            	"https://server2.talkingmoose.net",
-            	"https://server3.talkingmoose.net"
-			]
+                "https://server1.talkingmoose.net",
+                "https://server2.talkingmoose.net",
+                "https://server3.talkingmoose.net"
+            ]
         },
         "downloadDirectory": {
             "title": "Download Directory",
             "description": "Choose the default location for downloading working files.",
             "property_order": 20,
-            "type": "string"
+            "type": "string",
+            "options": {
+                "infoText": "Keyword: downloadDirectory"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
         },
         "askForPassword": {
             "title": "Ask For Password",
             "description": "Set Disk Manager application to require a password.",
             "property_order": 25,
-            "type": "boolean"
+            "type": "boolean",
+            "options": {
+                "infoText": "Keyword: askForPassword"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
         },
         "disableOutput": {
             "title": "Save Paper",
             "description": "Set paper-saving mode.",
-            "property_order": 27,
+            "property_order": 30,
             "type": "boolean",
             "options": {
                 "infoText": "Key name: disableOutput"
-            }
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
         },
         "powerSaver": {
             "title": "Power Saver",
             "description": "Enable energy saving features.",
-            "property_order": 29,
+            "property_order": 32,
             "type": "integer",
             "options": {
                 "enum_titles": [
-                	"On",
-                	"Off"
-				]
+                    "On",
+                    "Off"
+                ],
+                "infoText": "Keyword: powerSaver"
             },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ],
             "enum": [
-            	1,
-            	0
-			]
+                1,
+                0
+            ]
         },
         "domainWhitelist": {
             "title": "Domain Whitelist",
             "description": "Disk Manager will not filter these domains.",
-            "property_order": 30,
+            "property_order": 35,
             "type": "array",
             "items": {
                 "type": "string",
                 "title": "Domain"
-            }
+            },
+            "options": {
+                "infoText": "Key name: domainWhitelist"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
         },
         "serverList": {
             "title": "Server List",
             "description": "Add servers to management list.",
-            "property_order": 35,
+            "property_order": 40,
             "type": "array",
             "items": {
                 "title": "Server",
@@ -125,7 +188,33 @@
                         "type": "string"
                     }
                 }
-            }
+            },
+            "options": {
+                "infoText": "Key name: serverList"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
+        },
+        "epochDate": {
+            "title": "Start Date",
+            "description": "Date (in YYYY-MM-DD format) of drive installation.",
+            "default": "2020-01-01",
+            "property_order": 45,
+            "type": "string",
+            "pattern": "^20[0-9]{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[0-1])$",
+            "options": {
+                "infoText": "Key name: startDate"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://json-schema.org/understanding-json-schema/reference/type.html"
+                }
+            ]
         }
     },
     "required": ["powerSaver"]

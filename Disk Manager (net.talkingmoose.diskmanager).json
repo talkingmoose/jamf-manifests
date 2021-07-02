@@ -19,7 +19,7 @@
                     "4 hours",
                     "8 hours"
                 ],
-                "infoText": "Keyword: askForPasswordDelay"
+                "infoText": "Key name: askForPasswordDelay"
             },
             "links": [
                 {
@@ -45,7 +45,7 @@
             "property_order": 10,
             "type": "integer",
             "options": {
-                "infoText": "Keyword: diskCacheSize"
+                "infoText": "Key name: diskCacheSize"
             },
             "links": [
                 {
@@ -65,7 +65,7 @@
                     "Server 2",
                     "Server 3"
                 ],
-                "infoText": "Keyword: primaryServer"
+                "infoText": "Key name: primaryServer"
             },
             "links": [
                 {
@@ -85,7 +85,7 @@
             "property_order": 20,
             "type": "string",
             "options": {
-                "infoText": "Keyword: downloadDirectory"
+                "infoText": "Key name: downloadDirectory"
             },
             "links": [
                 {
@@ -100,7 +100,7 @@
             "property_order": 25,
             "type": "boolean",
             "options": {
-                "infoText": "Keyword: askForPassword"
+                "infoText": "Key name: askForPassword"
             },
             "links": [
                 {
@@ -134,7 +134,7 @@
                     "On",
                     "Off"
                 ],
-                "infoText": "Keyword: powerSaver"
+                "infoText": "Key name: powerSaver"
             },
             "links": [
                 {

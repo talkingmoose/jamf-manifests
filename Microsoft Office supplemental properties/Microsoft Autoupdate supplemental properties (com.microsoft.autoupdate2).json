@@ -1,0 +1,77 @@
+{
+    "title": "Microsoft AutoUpdate (com.microsoft.autoupdate2)",
+    "description": "Preference Domain: com.microsoft.autoupdate2, Application: Microsoft AutoUpdate. Supplemental properties.",
+    "__feedback": "bill@talkingmoose.net",
+    "properties": {
+        "UpdateDeadline.StartAutomaticUpdates": {
+            "title": "Configure Automatic Download and Install mode",
+            "description": "Configure how many days in advance of the deadline that Automatic Download and Install mode begins.",
+            "default": 3,
+            "property_order": 10,
+            "type": "integer",
+            "options": {
+                "infoText": "Key name: UpdateDeadline.StartAutomaticUpdates"
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/deployoffice/mac/mau-deadline#configure-automatic-download-and-install-mode"
+                }
+            ]
+        },
+        "UpdateDeadline.ApplicationsForcedUpdateSchedule": {
+            "title": "Configure a deadline for a specific date and time",
+            "description": "Configure a specific date and time for a deadline for a specific app update.",
+            "property_order": 20,
+            "type": "array",
+            "items": {
+                "title": "Schedule",
+                "type": "object",
+                "properties": {
+                    "Application ID": {
+                        "title": "Application ID",
+                        "type": "string",
+                        "options": {
+                            "enum_titles": [
+                                "Microsoft Excel",
+                                "Microsoft OneDrive",
+                                "Microsoft OneNote",
+                                "Microsoft Outlook",
+                                "Microsoft PowerPoint",
+                                "Microsoft Word"]
+                        },
+                        "enum": [
+                            "XCEL2019",
+                            "ONDR18",
+                            "ONMC2019",
+                            "OPIM2019",
+                            "PPT32019",
+                            "MSWD2019"
+                        ]
+                    },
+                    "ForcedUpdateDate": {
+                        "title": "Forced Update Date",
+                        "default": "2019-07-25T20:01:20Z",
+                        "type": "string",
+                        "pattern": "^20[0-9]{2}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[0-1])T[012][0-9]:[0-5][0-9]:[0-5][0-9]Z$"
+                    },
+                    "ForcedUpdateVersion": {
+                        "title": "Forced Update Version",
+                        "default": "16.27.19071500",
+                        "type": "string",
+                        "pattern": "^16\\.\\d{2}\\.\\d+$"
+                    }
+                },
+                "options": {
+                    "infoText": "Key name: UpdateDeadline.StartAutomaticUpdates"
+                }
+            },
+            "links": [
+                {
+                    "rel": "More information",
+                    "href": "https://docs.microsoft.com/en-us/deployoffice/mac/mau-deadline#configure-a-deadline-for-a-specific-date-and-time"
+                }
+            ]
+        }
+    }
+}
